@@ -4,7 +4,7 @@
 		module="srf-auth_sjs0.6_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170719092429"
+		publication="20170719145811"
 	>
 		<description>
 		srf-auth
@@ -43,5 +43,7 @@
 		<dependency org="org.springframework.security.kerberos" name="spring-security-kerberos-core" rev="1.0.1.RELEASE" conf="compile->default(compile)"/>
 		<dependency org="org.springframework.ldap" name="spring-ldap-core" rev="2.0.4.RELEASE" conf="compile->default(compile)"/>
 		<dependency org="org.scalaz" name="scalaz-core_2.12" rev="7.2.12" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-concurrent_2.12" rev="7.2.12" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-effect_2.12" rev="7.2.12" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

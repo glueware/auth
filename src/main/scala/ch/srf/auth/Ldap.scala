@@ -5,77 +5,91 @@ import javax.naming.directory.DirContext
 import ch.srf.auth.Config.LdapConfigWithBaseDn
 
 import scala.collection.JavaConversions._
-import ch.srf.auth.Domain.{BU, UserCredentials, UserWithoutRole}
+import ch.srf.auth.Domain._
 import org.springframework.ldap.core.{AuthenticatedLdapEntryContextMapper, LdapEntryIdentification, LdapTemplate}
 import org.springframework.ldap.query.{LdapQuery, LdapQueryBuilder}
 import org.springframework.ldap.core.support.LdapContextSource
 
 import scalaz.{-\/, \/, \/-}
+import scalaz.concurrent.Task
+import scala.concurrent.duration._
+
 
 object Ldap {
+  private val config: LdapConfigWithBaseDn = ???
 
-  def template(config: LdapConfigWithBaseDn): LdapTemplate = {
-    val ldapContextSource = new LdapContextSource
+  private[auth] def authenticatedUserWithoutRoleT(credentials: UserCredentials): Task[AuthResult[UserWithoutRole]] = {
+    // parameters
+    lazy val template: LdapTemplate = {
+      val ldapContextSource = new LdapContextSource
 
-    // apply ldap config
-    ldapContextSource.setUrl(config.sub.url)
-    ldapContextSource.setBase(config.baseDn)
-    ldapContextSource.setUserDn(config.sub.userDn)
-    ldapContextSource.setPassword(config.sub.password)
+      // apply ldap config
+      ldapContextSource.setUrl(config.sub.url)
+      ldapContextSource.setBase(config.baseDn)
+      ldapContextSource.setUserDn(config.sub.userDn)
+      ldapContextSource.setPassword(config.sub.password)
 
-    // this is necessary, when the ldapContextSource is not set by a spring context
-    // authenticationSource would be null otherwise
-    ldapContextSource.afterPropertiesSet()
+      // this is necessary, when the ldapContextSource is not set by a spring context
+      // authenticationSource would be null otherwise
+      ldapContextSource.afterPropertiesSet()
 
-    new LdapTemplate(ldapContextSource)
-  }
-
-
-  /**
-    *
-    * @param attribute
-    * @param credentials
-    * @return
-    */
-  def query(attribute: String, credentials: UserCredentials): LdapQuery =
-    LdapQueryBuilder.query().base("").where(attribute).is(credentials.username)
-
-  def password(credentials: UserCredentials): String = credentials.password
-
-  def mapper: AuthenticatedLdapEntryContextMapper[List[BU]] = new AuthenticatedLdapEntryContextMapper[List[BU]] {
-    override def mapWithContext(ctx: DirContext, ldapEntryIdentification: LdapEntryIdentification): List[BU] = {
-      ldapEntryIdentification.getAbsoluteName.getRdns.toList
-        .filter(rdn => rdn.getType.toLowerCase == "ou")
-        .map(rdn => rdn.getValue.toString.toLowerCase)
-        .map(ou => BU.forName(ou)).flatten
+      new LdapTemplate(ldapContextSource)
     }
-  }
 
+    lazy val query: LdapQuery =
+      LdapQueryBuilder.query()
+        .base("")
+        .where(config.userNameAttr)
+        .is(credentials.username)
 
-  // main target
-  private[auth] def authenticatedUserWithoutRole(query: LdapQuery,
-                                                 credentials: UserCredentials, // credentials instead of query and password, because username, bu is needed for errormessages
-                                                 mapper: AuthenticatedLdapEntryContextMapper[List[BU]]): \/[Throwable, UserWithoutRole] = {
+    lazy val password = credentials.password
 
-    def isAuthenticated(buList: List[BU]) =
-      if (buList.nonEmpty) {
-        \/-(())
-      } else
-        -\/(new RuntimeException("Ldap: User ${credentials.username} not authenticated for any bu"))
+    lazy val username = credentials.username
 
-    def bu(buList: List[BU], credentials: UserCredentials) =
-      buList.find(_ == credentials.bu) match {
-        case Some(bu) => \/-(bu)
-        case _ => -\/(new RuntimeException(s"Ldap: User ${credentials.username} not authenticated for $buList"))
+    lazy val bu = credentials.bu
+
+    lazy val mapper: AuthenticatedLdapEntryContextMapper[List[BU]] = new AuthenticatedLdapEntryContextMapper[List[BU]] {
+      override def mapWithContext(ctx: DirContext, ldapEntryIdentification: LdapEntryIdentification): List[BU] = {
+        ldapEntryIdentification.getAbsoluteName.getRdns.toList
+          .filter(rdn => rdn.getType.toLowerCase == "ou")
+          .map(rdn => rdn.getValue.toString.toLowerCase)
+          .map(ou => BU.forName(ou)).flatten
       }
+    }
 
+    // this tries to do the work
+    def authenticatedUserWithoutRole: AuthResult[UserWithoutRole] = {
 
-    val buList = template.authenticate(query, password(credentials), mapper)
+      def isAuthenticated(buList: List[BU]) =
+        if (buList.nonEmpty) {
+          \/-(())
+        } else
+          -\/(BadCredentials(credentials, AuthProviderLdap))
 
-    for {
-      _ <- isAuthenticated(buList)
-      bu <- bu(buList, credentials)
-    } yield UserWithoutRole(credentials.username, bu)
+      def buInList(buList: List[BU]) =
+        buList.find(_ == bu) match {
+          case Some(b) => \/-(b)
+          case _ => -\/(BadCredentials(credentials, AuthProviderLdap))
+        }
 
+      // this does the work
+      def buList = template.authenticate(query, password, mapper)
+
+      for {
+        _ <- isAuthenticated(buList)
+        bu <- buInList(buList)
+      } yield UserWithoutRole(username, bu)
+    }
+
+    // Task[\/[Throwable, AuthResult[UserWithoutRole]]]
+    val task: Task[AuthResult[UserWithoutRole]] = Task(authenticatedUserWithoutRole)
+
+    def flatten(result: \/[Throwable, AuthResult[UserWithoutRole]]): AuthResult[UserWithoutRole] = result match {
+      case -\/(_) => -\/(LdapAuthenticationTimeout(credentials))
+      case \/-(r) => r
+    }
+
+    Task.fork(task).timed(2.seconds).attempt.map(flatten)
   }
+
 }

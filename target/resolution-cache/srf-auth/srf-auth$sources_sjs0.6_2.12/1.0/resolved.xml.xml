@@ -4,7 +4,7 @@
 		module="srf-auth$sources_sjs0.6_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170719092431"
+		publication="20170719145812"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -25,6 +25,9 @@
 	<publications>
 	</publications>
 	<dependencies>
+		<dependency org="org.scalaz" name="scalaz-effect_2.12" rev="7.2.12" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="scalaz-effect_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-continuation" rev="8.1.16.v20140903" transitive="false" conf="phantom-js-jetty->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="jetty-continuation" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
@@ -60,6 +63,9 @@
 		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-io" rev="8.1.16.v20140903" transitive="false" conf="phantom-js-jetty->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="jetty-io" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scalaz" name="scalaz-concurrent_2.12" rev="7.2.12" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="scalaz-concurrent_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-js" name="scalajs-test-interface_2.12" rev="0.6.18" transitive="false" conf="test->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master" info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.18/">
 			<artifact name="scalajs-test-interface_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -103,7 +109,7 @@
 		<dependency org="jline" name="jline" rev="2.14.3" transitive="false" conf="scala-tool->compile,master(compile),compile(*),master">
 			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.scalaz" name="scalaz-core_2.12" rev="7.2.12" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+		<dependency org="org.scalaz" name="scalaz-core_2.12" rev="7.2.12" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
 			<artifact name="scalaz-core_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.springframework.security.kerberos" name="spring-security-kerberos-core" rev="1.0.1.RELEASE" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">

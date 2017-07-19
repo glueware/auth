@@ -12,6 +12,8 @@ lazy val root = project.in(file("."))
     libraryDependencies ++= Seq(
       "org.springframework.security.kerberos" % "spring-security-kerberos-core" % "1.0.1.RELEASE",
       "org.springframework.ldap" % "spring-ldap-core" % "2.0.4.RELEASE",
-      SrfPlugin.Deps.Compile.scalazCore
+      SrfPlugin.Deps.Compile.scalazCore,
+      SrfPlugin.Deps.Compile.scalazConcurrent,
+      SrfPlugin.Deps.Compile.scalazEffect
     )
   )

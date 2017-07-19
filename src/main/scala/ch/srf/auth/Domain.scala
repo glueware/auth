@@ -1,6 +1,63 @@
 package ch.srf.auth
 
+import scalaz.{NonEmptyList, Validation, ValidationNel, \/}
+
 object Domain {
+
+  sealed trait AuthProvider
+
+  case object AuthProviderLdap extends AuthProvider
+
+  type AuthResult[X] = \/[AuthException, X]
+
+//  object AuthResult {
+//    def success[X](x: X): AuthResult[X] = Validation.success(x).toValidationNel
+//
+//    def failure[X](e: AuthException): AuthResult[X] = Validation.failureNel(e)
+//
+//    def failure[X](e: NonEmptyList[AuthException]): AuthResult[X] = Validation.failure(e)
+//  }
+
+  sealed trait AuthException {
+    def fold[X](onBadCredentials: BadCredentials => X,
+                onLdapNotReachable: LdapNotReachable => X,
+                onLdapAuthenticationTimeout: LdapAuthenticationTimeout => X,
+                onRolesNotFetchable: RolesNotFetchable => X,
+                onNoRoleAssigned: NoRoleAssigned => X,
+                onRoleTextNotParseable: RoleTextNotParseable => X,
+                onRolesNotMappable: RolesNotMappable => X,
+                onRoleFetchTimeout: RoleFetchTimeout => X,
+                onUserDoesNotBelongToBU: UserDoesNotBelongToBu => X) = this match {
+      case x: BadCredentials => onBadCredentials(x)
+      case x: LdapNotReachable => onLdapNotReachable(x)
+      case x: LdapAuthenticationTimeout => onLdapAuthenticationTimeout(x)
+      case x: RolesNotFetchable => onRolesNotFetchable(x)
+      case x: NoRoleAssigned => onNoRoleAssigned(x)
+      case x: RoleTextNotParseable => onRoleTextNotParseable(x)
+      case x: RolesNotMappable => onRolesNotMappable(x)
+      case x: RoleFetchTimeout => onRoleFetchTimeout(x)
+      case x: UserDoesNotBelongToBu => onUserDoesNotBelongToBU(x)
+    }
+  }
+
+  case class BadCredentials(user: UserCredentials, provider: AuthProvider) extends AuthException
+
+  case class LdapNotReachable(user: UserCredentials, ldapUrl: NonEmptyList[String], logicalName: String) extends AuthException
+
+  case class LdapAuthenticationTimeout(user: UserCredentials) extends AuthException
+
+  case class RolesNotFetchable(user: UserCredentials, underlying: Throwable, url: String) extends AuthException
+
+  case class NoRoleAssigned(user: UserCredentials, url: String) extends AuthException
+
+  case class RoleTextNotParseable(user: UserCredentials, text: String, details: String) extends AuthException
+
+  case class RolesNotMappable(user: UserCredentials, roles: NonEmptyList[String]) extends AuthException
+
+  case class RoleFetchTimeout(user: UserCredentials) extends AuthException
+
+  case class UserDoesNotBelongToBu(user: UserCredentials) extends AuthException
+
 
   object Role {
 
@@ -15,7 +72,6 @@ object Domain {
   }
 
   object BU {
-
 
     def forName(s: String): Option[BU] = s.toLowerCase match {
       case "srf" => Some(SRF())

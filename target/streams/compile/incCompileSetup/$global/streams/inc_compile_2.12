@@ -20,7 +20,13 @@ name hashing:
 1 items
 0 -> true
 products:
-27 items
+33 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$.class
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfig$.class
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfig.class
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfigWithBaseDn$.class
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfigWithBaseDn.class
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config.class
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$.class
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$BU$.class
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$BU.class
@@ -49,7 +55,9 @@ products:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap$.class
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap.class
 binary dependencies:
-12 items
+13 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> /Users/joerg/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> /Users/joerg/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Kerberos.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
@@ -61,7 +69,6 @@ binary dependencies:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/.ivy2/cache/org.scalaz/scalaz-core_2.12/bundles/scalaz-core_2.12-7.2.12.jar
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/.ivy2/cache/org.springframework.ldap/spring-ldap-core/jars/spring-ldap-core-2.0.4.RELEASE.jar
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/.ivy2/cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.2.7.RELEASE.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -71,8 +78,9 @@ public inherited source dependencies:
 public inherited external dependencies:
 0 items
 member reference internal dependencies:
-2 items
+3 items
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Kerberos.scala -> /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala
 member reference external dependencies:
 0 items
@@ -81,7 +89,13 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-27 items
+33 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config$
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config$LdapConfig
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config$LdapConfig$
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config$LdapConfigWithBaseDn
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch.srf.auth.Config$LdapConfigWithBaseDn$
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> ch.srf.auth.Domain
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> ch.srf.auth.Domain$
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> ch.srf.auth.Domain$BU
@@ -110,7 +124,58 @@ class names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ch.srf.auth.Ldap$
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ch.srf.auth.Ldap$$anon$1
 used names:
-295 items
+365 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> &&
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> <init>
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ==
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> A
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> AbstractFunction3
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Any
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> AnyRef
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Boolean
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Config
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> IndexOutOfBoundsException
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Int
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Iterator
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> LdapConfig
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> LdapConfigWithBaseDn
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> None
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Nothing
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Object
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Option
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Predef
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Product
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ScalaRunTime
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Serializable
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Some
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> String
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> T
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> T0
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> T1
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> T2
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> T3
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> Tuple3
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> _hashCode
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> _root_
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> _toString
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> asInstanceOf
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> auth
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> baseDn
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ch
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> eq
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> isInstanceOf
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> package
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> password
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> runtime
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> scala
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> srf
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> sub
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> toString
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> typedProductIterator
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> url
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> userDn
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> userNameAttr
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> ||
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> &&
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> <byname>
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> <init>
@@ -308,20 +373,21 @@ used names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> <init>
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> <repeated>
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ==
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ???
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> A
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> AA
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Any
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> AnyRef
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> AuthenticatedLdapEntryContextMapper
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Authentication
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> AuthenticationException
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> B
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> BU
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Boolean
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Buffer
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> CanBuildFrom
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Coll
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ConditionCriteria
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Config
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ContainerCriteria
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ContextSource
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> D
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> DirContext
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Domain
@@ -330,20 +396,21 @@ used names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Iterable
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> JavaConversions
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Ldap
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapConfig
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapConfigWithBaseDn
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapContextSource
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapEntryIdentification
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapName
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapQuery
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapQueryBuilder
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> LdapTemplate
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> List
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> NonEmptyList
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Nothing
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Object
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Option
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Predef
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Rdn
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> RuntimeException
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> SRF
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> Some
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> String
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> StringContext
@@ -356,14 +423,21 @@ used names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> UserWithoutRole
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> \/
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> \/-
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> afterPropertiesSet
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> asInstanceOf
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> attribute
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> auth
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> authenticate
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> b
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> base
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> baseDn
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> bu
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> buInList
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> buList
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> canBuildFrom
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ch
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> collection
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> config
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> core
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> credentials
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> deprecated asScalaBuffer
@@ -378,10 +452,12 @@ used names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> getType
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> getValue
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> immutable
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> is
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> isAuthenticated
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> isInstanceOf
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> javax
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ldap
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ldapContextSource
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> ldapEntryIdentification
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> map
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> mapper
@@ -397,17 +473,31 @@ used names:
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> s
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> scala
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> scalaz
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> security
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> setBase
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> setPassword
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> setUrl
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> setUserDn
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> springframework
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> srf
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> sub
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> support
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> template
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> toList
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> toLowerCase
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> toString
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> url
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> userDn
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> username
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> value
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> where
 product stamps:
-27 items
+33 items
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfig$.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfig.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfigWithBaseDn$.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config$LdapConfigWithBaseDn.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Config.class -> lastModified(1500461161000)
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$.class -> lastModified(1500454827000)
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$BU$.class -> lastModified(1500454827000)
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Domain$BU.class -> lastModified(1500454827000)
@@ -432,14 +522,15 @@ product stamps:
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Kerberos$SpringUserDetailsDummy$2.class -> lastModified(1500454827000)
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Kerberos$SpringUserDetailsDummy$3$.class -> lastModified(1500454827000)
 /Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Kerberos.class -> lastModified(1500454827000)
-/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap$$anon$1.class -> lastModified(1500454827000)
-/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap$.class -> lastModified(1500454827000)
-/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap.class -> lastModified(1500454827000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap$$anon$1.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap$.class -> lastModified(1500461161000)
+/Users/joerg/IdeaProjects/srf-auth/target/scala-2.12/classes/ch/srf/auth/Ldap.class -> lastModified(1500461161000)
 source stamps:
-3 items
+4 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> hash(7ca42691bb7b8745335334a152129ebc72b668f1)
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> hash(e64bf230eeba5bc184c10d178bd1d88e10082ed2)
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Kerberos.scala -> hash(0aa6ef7569b19a3a0ed37098116fffe3c5c281c5)
-/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> hash(d4a14d5d710d1adedc50b8d64b6178a5fa7ca0db)
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> hash(89ef06f0a4e06ac2ad84f340c8ba80799021ec3c)
 binary stamps:
 6 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1481605174000)
@@ -451,23 +542,27 @@ binary stamps:
 class names:
 6 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
-/Users/joerg/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.collection.TraversableOnce
+/Users/joerg/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.Some
 /Users/joerg/.ivy2/cache/org.scalaz/scalaz-core_2.12/bundles/scalaz-core_2.12-7.2.12.jar -> scalaz.$bslash$div$minus$
 /Users/joerg/.ivy2/cache/org.springframework.ldap/spring-ldap-core/jars/spring-ldap-core-2.0.4.RELEASE.jar -> org.springframework.ldap.core.AuthenticatedLdapEntryContextMapper
 /Users/joerg/.ivy2/cache/org.springframework.security.kerberos/spring-security-kerberos-core/jars/spring-security-kerberos-core-1.0.1.RELEASE.jar -> org.springframework.security.kerberos.authentication.KerberosServiceRequestToken
 /Users/joerg/.ivy2/cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.2.7.RELEASE.jar -> org.springframework.security.core.Authentication
 internal apis:
-3 items
+4 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwELQXAQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAArc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwRVTf3XQABm5vdGlmeXNxAH4ADCKiiUh0ABRMZGFwQ29uZmlnV2l0aEJhc2VEbnNxAH4ADNzik9p0AAd1bmFwcGx5c3EAfgAMEvSUMnQAB2N1cnJpZWRzcQB+AAxoH8pDdAAGdXNlckRuc3EAfgAMp2K003QABHdhaXRzcQB+AAwv3ywqdAAOY29weSRkZWZhdWx0JDJzcQB+AAwQ+FDndAANJGFzSW5zdGFuY2VPZnNxAH4ADGXGLGV0AAxwcm9kdWN0QXJpdHlzcQB+AAzJ99WfdAADdXJsc3EAfgAM03cAWnQABmVxdWFsc3NxAH4ADD2JiYR0AAxhc0luc3RhbmNlT2ZzcQB+AAwVvIRJdAAMc3luY2hyb25pemVkc3EAfgAMKpLqfXQADSRpc0luc3RhbmNlT2ZzcQB+AAy8cL2PdAAGYmFzZURuc3EAfgAMU4Fx3nQABnR1cGxlZHNxAH4ADDOa1/J0AAhjYW5FcXVhbHNxAH4ADAD0cZJ0AA1wcm9kdWN0UHJlZml4c3EAfgAMlqMCOHQACW5vdGlmeUFsbHNxAH4ADMKKd3B0AAxpc0luc3RhbmNlT2ZzcQB+AAzxV9fFdAAGPGluaXQ+c3EAfgAMhO/Mz3QABkNvbmZpZ3NxAH4ADErzDL10AApMZGFwQ29uZmlnc3EAfgAMY0T/P3QABWFwcGx5c3EAfgAMm7dljnQAAj09c3EAfgAMqJIWunQABWNsb25lc3EAfgAMZReG+HQABiRpbml0JHNxAH4ADDJy+6V0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADPr3LcJ0AARjb3B5c3EAfgAMc8chk3QACHRvU3RyaW5nc3EAfgAMatinuHQAA3N1YnNxAH4ADNxHO1Z0AAIhPXNxAH4ADMu9qQl0AAhnZXRDbGFzc3NxAH4ADI9cJCJ0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADDG+RwN0AAJuZXNxAH4ADIWYFH50AAx1c2VyTmFtZUF0dHJzcQB+AAw/vlTbdAACZXFzcQB+AAwh8yAadAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMEkQkd3QAAiMjc3EAfgAMz14MXnQACGZpbmFsaXplc3EAfgAMaZTfFXQADnByb2R1Y3RFbGVtZW50c3EAfgAM92Cf4HQACGhhc2hDb2Rlc3EAfgAMWeAvVHQACHBhc3N3b3Jkc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AbXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAEmNoLnNyZi5hdXRoLkNvbmZpZ3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AhXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBtTAAJaW5oZXJpdGVkcQB+AG1MAAdwYXJlbnRzcQB+AG14cQB+AIpzcQB+AIV1cQB+AGgAAAAAc3EAfgCFdXEAfgBoAAAAAHNxAH4AhXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AiXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AiXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AonQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ao3NxAH4AlnQAA0FueXNxAH4AmnNxAH4AnXVxAH4AoAAAAAJzcQB+AKJ0AAVzY2FsYXEAfgCpdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAACY2hzcQB+ALN0AAZjaC5zcmZzcQB+ALN0AAtjaC5zcmYuYXV0aHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVp0SoZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA8L1VzZXJzL2pvZXJnL0lkZWFQcm9qZWN0cy9zcmYtYXV0aC90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUfKQmkbt7h0UzUzShUhKevHK2aPE=
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwJ5BMMAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAA5c3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdoInf3QAAkJVc3EAfgAMRuwPAnQABm5vdGlmeXNxAH4ADBcuVw50AAd1bmFwcGx5c3EAfgAMvjyOo3QAB2N1cnJpZWRzcQB+AAwD4Wy4dAAEbmFtZXNxAH4ADOK3feB0AA9Sb2xlU3VwZXJFZGl0b3JzcQB+AAzhnypCdAAEd2FpdHNxAH4ADPSIiHl0AARSb2xlc3EAfgAM+6HeYnQADmNvcHkkZGVmYXVsdCQyc3EAfgAMWAdTmXQADSRhc0luc3RhbmNlT2ZzcQB+AAxJV2GJdAAKZnJvbVN0cmluZ3NxAH4ADBEEY5F0AA1Sb2xlV2ViRWRpdG9yc3EAfgAMDLfW93QADHByb2R1Y3RBcml0eXNxAH4ADK7muUx0AARyb2xlc3EAfgAMFpuWJXQABmVxdWFsc3NxAH4ADDdZxp50AAh1c2VybmFtZXNxAH4ADCfDa7N0AAxhc0luc3RhbmNlT2ZzcQB+AAyCnfdmdAAMc3luY2hyb25pemVkc3EAfgAMtGupEnQAEXRvVXNlcldpdGhvdXRSb2xlc3EAfgAMU1Bji3QADSRpc0luc3RhbmNlT2ZzcQB+AAxW8jt5dAAGdHVwbGVkc3EAfgAMqLd1jXQABGZvbGRzcQB+AAx2CTuqdAAIY2FuRXF1YWxzcQB+AAx1dCTTdAAOY29weSRkZWZhdWx0JDRzcQB+AAziZI4fdAAOaGllcmFyY2h5TGV2ZWxzcQB+AAz3cQn2dAANcHJvZHVjdFByZWZpeHNxAH4ADNO0tel0AAlub3RpZnlBbGxzcQB+AAzyTCBhdAAPVXNlckNyZWRlbnRpYWxzc3EAfgAMrXOVc3QADGlzSW5zdGFuY2VPZnNxAH4ADK27c9t0AAY8aW5pdD5zcQB+AAxzdFEAdAACYnVzcQB+AAwoJ0tvdAAFYXBwbHlzcQB+AAwNjdt2dAACPT1zcQB+AAyGoRDUdAAFY2xvbmVzcQB+AAxHTTFEdAAPVXNlcldpdGhvdXRSb2xlc3EAfgAM9TSBuHQABiRpbml0JHNxAH4ADDtyvfh0AANSVFJzcQB+AAyRlcU3dAAEVXNlcnNxAH4ADA7O+Od0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADMCpfAZ0AARjb3B5c3EAfgAMxSKz9XQACHRvU3RyaW5nc3EAfgAM97AW8XQAAiE9c3EAfgAMkWTUaHQACGdldENsYXNzc3EAfgAMnrnI3HQAA1NSRnNxAH4ADB3/g/50AA5jb3B5JGRlZmF1bHQkMXNxAH4ADI4tYkh0AAdmb3JOYW1lc3EAfgAMfNc17XQAAm5lc3EAfgAMQ7cfKnQACHdpdGhSb2xlc3EAfgAM88IMpXQABkRvbWFpbnNxAH4ADEwigK90AAJlcXNxAH4ADF2ue7t0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAyd1ra6dAACIyNzcQB+AAx8ei5qdAAIZmluYWxpemVzcQB+AAwS5MWXdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAwB7EnldAAIaGFzaENvZGVzcQB+AAx9IDhPdAAIcGFzc3dvcmRzcQB+AAzkgWhcdAAKYnVPdmVycmlkZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AIl4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABJjaC5zcmYuYXV0aC5Eb21haW51cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AKFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AiUwACWluaGVyaXRlZHEAfgCJTAAHcGFyZW50c3EAfgCJeHEAfgCmc3EAfgChdXEAfgCEAAAAAHNxAH4AoXVxAH4AhAAAAABzcQB+AKF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AKV0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AKVzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AL50AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AL9zcQB+ALJ0AANBbnlzcQB+ALZzcQB+ALl1cQB+ALwAAAACc3EAfgC+dAAFc2NhbGFxAH4AxXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAAmNoc3EAfgDPdAAGY2guc3Jmc3EAfgDPdAALY2guc3JmLmF1dGhzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV1aE56RdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFOZL8jDuulvBhMENF4vR2I4QCC7S
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Kerberos.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuvjYMgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAXc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwd3OzJ3QABm5vdGlmeXNxAH4ADETMrXV0AAR3YWl0c3EAfgAM2yP9sHQADSRhc0luc3RhbmNlT2ZzcQB+AAxCfBAFdAAGZXF1YWxzc3EAfgAMU7JTM3QADGFzSW5zdGFuY2VPZnNxAH4ADNZUhQp0ABxhdXRoZW50aWNhdGVkVXNlcldpdGhvdXRSb2xlc3EAfgAM0VV08HQADHN5bmNocm9uaXplZHNxAH4ADJiPoEx0AA0kaXNJbnN0YW5jZU9mc3EAfgAMmUuT8HQACEtlcmJlcm9zc3EAfgAMPgoqH3QACW5vdGlmeUFsbHNxAH4ADFRQdzh0AAxpc0luc3RhbmNlT2ZzcQB+AAxXzuTfdAACPT1zcQB+AAziUVzWdAAFY2xvbmVzcQB+AAxOoHkXdAAIdG9TdHJpbmdzcQB+AAz46L1/dAACIT1zcQB+AAydMIKWdAAla2VyYmVyb3NTZXJ2aWNlQXV0aGVudGljYXRpb25Qcm92aWRlcnNxAH4ADLXgXRB0AAhnZXRDbGFzc3NxAH4ADFqSv6d0AC5rZXJiZXJvc1NlcnZpY2VSZXF1ZXN0VG9rZW5Gcm9tQXV0aEhlYWRlclZhbHVlc3EAfgAMwftG1HQAAm5lc3EAfgAMo0rVYnQAAmVxc3EAfgAMYr1NC3QAAiMjc3EAfgAMUGdhanQACGZpbmFsaXplc3EAfgAMpyWtSHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ARXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAFGNoLnNyZi5hdXRoLktlcmJlcm9zdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBdc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEVMAAlpbmhlcml0ZWRxAH4ARUwAB3BhcmVudHNxAH4ARXhxAH4AYnNxAH4AXXVxAH4AQAAAAABzcQB+AF11cQB+AEAAAAAAc3EAfgBddXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBhdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBhc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgB6dAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgB7c3EAfgBudAADQW55c3EAfgByc3EAfgB1dXEAfgB4AAAAAnNxAH4AenQABXNjYWxhcQB+AIF1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAJjaHNxAH4Ai3QABmNoLnNyZnNxAH4Ai3QAC2NoLnNyZi5hdXRoc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFdWhOekXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADwvVXNlcnMvam9lcmcvSWRlYVByb2plY3RzL3NyZi1hdXRoL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQKpu91abGaOg7TcJgRb//jxcKBxQ==
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwooD1hQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAZc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw0kU8R3QABm5vdGlmeXNxAH4ADGKbtEF0AAR3YWl0c3EAfgAMZif7vXQADSRhc0luc3RhbmNlT2ZzcQB+AAxQBQYldAAGbWFwcGVyc3EAfgAMTakFuHQABmVxdWFsc3NxAH4ADMDnQf50AAxhc0luc3RhbmNlT2ZzcQB+AAwFlZrGdAAcYXV0aGVudGljYXRlZFVzZXJXaXRob3V0Um9sZXNxAH4ADCfQmFJ0AAxzeW5jaHJvbml6ZWRzcQB+AAws4zPSdAANJGlzSW5zdGFuY2VPZnNxAH4ADNBDXhd0AARMZGFwc3EAfgAMxVnYoHQABXF1ZXJ5c3EAfgAM95eNVnQACW5vdGlmeUFsbHNxAH4ADI+aHMp0AAxpc0luc3RhbmNlT2ZzcQB+AAxTAIiHdAACPT1zcQB+AAwm1kCZdAAFY2xvbmVzcQB+AAx5IsJUdAAIdGVtcGxhdGVzcQB+AAze3CJ8dAAIdG9TdHJpbmdzcQB+AAyH+Sh5dAACIT1zcQB+AAyRDoT9dAAIZ2V0Q2xhc3NzcQB+AAxcXawEdAACbmVzcQB+AAzOvrS5dAACZXFzcQB+AAwg25Z0dAACIyNzcQB+AAxmbTy+dAAIZmluYWxpemVzcQB+AAyxgRSAdAAIaGFzaENvZGVzcQB+AAwNOt/EdAAIcGFzc3dvcmRzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBJeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAQY2guc3JmLmF1dGguTGRhcHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBJTAAJaW5oZXJpdGVkcQB+AElMAAdwYXJlbnRzcQB+AEl4cQB+AGZzcQB+AGF1cQB+AEQAAAAAc3EAfgBhdXEAfgBEAAAAAHNxAH4AYXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AZXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AZXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AfnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Af3NxAH4AcnQAA0FueXNxAH4AdnNxAH4AeXVxAH4AfAAAAAJzcQB+AH50AAVzY2FsYXEAfgCFdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAACY2hzcQB+AI90AAZjaC5zcmZzcQB+AI90AAtjaC5zcmYuYXV0aHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVoTnpF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA8L1VzZXJzL2pvZXJnL0lkZWFQcm9qZWN0cy9zcmYtYXV0aC90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU1KFNXXENGt7cULjWS2F4pfp8oNs=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwh+WqXwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAZc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw0kU8R3QABm5vdGlmeXNxAH4ADGKbtEF0AAR3YWl0c3EAfgAMZif7vXQADSRhc0luc3RhbmNlT2ZzcQB+AAxQBQYldAAGbWFwcGVyc3EAfgAMTakFuHQABmVxdWFsc3NxAH4ADMDnQf50AAxhc0luc3RhbmNlT2ZzcQB+AAy2rw7ldAAcYXV0aGVudGljYXRlZFVzZXJXaXRob3V0Um9sZXNxAH4ADCfQmFJ0AAxzeW5jaHJvbml6ZWRzcQB+AAws4zPSdAANJGlzSW5zdGFuY2VPZnNxAH4ADNBDXhd0AARMZGFwc3EAfgAMATvKqXQABXF1ZXJ5c3EAfgAM95eNVnQACW5vdGlmeUFsbHNxAH4ADI+aHMp0AAxpc0luc3RhbmNlT2ZzcQB+AAxTAIiHdAACPT1zcQB+AAwm1kCZdAAFY2xvbmVzcQB+AAxIyLJmdAAIdGVtcGxhdGVzcQB+AAze3CJ8dAAIdG9TdHJpbmdzcQB+AAyH+Sh5dAACIT1zcQB+AAyRDoT9dAAIZ2V0Q2xhc3NzcQB+AAxcXawEdAACbmVzcQB+AAzOvrS5dAACZXFzcQB+AAwg25Z0dAACIyNzcQB+AAxmbTy+dAAIZmluYWxpemVzcQB+AAyxgRSAdAAIaGFzaENvZGVzcQB+AAwNOt/EdAAIcGFzc3dvcmRzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBJeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAQY2guc3JmLmF1dGguTGRhcHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBJTAAJaW5oZXJpdGVkcQB+AElMAAdwYXJlbnRzcQB+AEl4cQB+AGZzcQB+AGF1cQB+AEQAAAAAc3EAfgBhdXEAfgBEAAAAAHNxAH4AYXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AZXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AZXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AfnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Af3NxAH4AcnQAA0FueXNxAH4AdnNxAH4AeXVxAH4AfAAAAAJzcQB+AH50AAVzY2FsYXEAfgCFdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAACY2hzcQB+AI90AAZjaC5zcmZzcQB+AI90AAtjaC5zcmYuYXV0aHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVp0SoZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA8L1VzZXJzL2pvZXJnL0lkZWFQcm9qZWN0cy9zcmYtYXV0aC90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUie8G8KTgasKthPNAyLqAeZAh7Dw=
 external apis:
 0 items
 source infos:
-3 items
+4 items
+/Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Config.scala -> 
+AAAAAAAAAAA=
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Domain.scala -> 
 AAAAAAAAAAA=
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Kerberos.scala -> 
@@ -475,9 +570,10 @@ AAAAAAAAAAA=
 /Users/joerg/IdeaProjects/srf-auth/src/main/scala/ch/srf/auth/Ldap.scala -> 
 AAAAAAAAAAA=
 compilations:
-5 items
+6 items
 0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVmabTd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=
 1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVm+7Ot1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=
 2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVnDGr11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=
 3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVnv1yd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=
 4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVoTnpF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=
+5 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXVp0SoZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9qb2VyZy9JZGVhUHJvamVjdHMvc3JmLWF1dGgvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=

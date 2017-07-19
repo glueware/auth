@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.springframework.ldap:spring-ldap-core:2.0.4.RELEASE:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.ldap/spring-ldap-core/jars/spring-ldap-core-2.0.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.ldap/spring-ldap-core/srcs/spring-ldap-core-2.0.4.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

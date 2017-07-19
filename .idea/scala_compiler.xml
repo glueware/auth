@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="implicitConversions" value="true" />
+    <option name="higherKinds" value="true" />
+    <option name="featureWarnings" value="true" />
+    <parameters>
+      <parameter value="-feature" />
+    </parameters>
+    <option name="incrementalityType" value="SBT" />
+    <profile name="SBT 1" modules="srf-auth" />
+    <profile name="SBT 2" modules="root">
+      <plugins>
+        <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.12.2/jars/scalajs-compiler_2.12.2-0.6.18.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>

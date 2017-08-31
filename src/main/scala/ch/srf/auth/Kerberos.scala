@@ -39,11 +39,11 @@ object Kerberos {
     for {
       // main call to Kerberos
       authentication <- \/.fromTryCatchNonFatal(kerberosServiceAuthenticationProvider.authenticate(kerberosServiceRequestToken))
-      _ <-
-      if (authentication.isAuthenticated) {
-        \/-(())
-      } else
-        -\/(new RuntimeException("Kerberos: not authenticated"))
+//      _ <-
+//      if (authentication.isAuthenticated) {
+//        \/-(())
+//      } else
+//        -\/(new RuntimeException("Kerberos: not authenticated"))
       user <- \/.fromTryCatchNonFatal(userWithoutRole(authentication))
     } yield user
   }

@@ -18,23 +18,24 @@ import scala.concurrent.duration._
 object Ldap {
   private val config: LdapConfigWithBaseDn = ???
 
+  lazy val template: LdapTemplate = {
+    val ldapContextSource = new LdapContextSource
+
+    // apply ldap config
+    ldapContextSource.setUrl(config.sub.url)
+    ldapContextSource.setBase(config.baseDn)
+    ldapContextSource.setUserDn(config.sub.userDn)
+    ldapContextSource.setPassword(config.sub.password)
+
+    // this is necessary, when the ldapContextSource is not set by a spring context
+    // authenticationSource would be null otherwise
+    ldapContextSource.afterPropertiesSet()
+
+    new LdapTemplate(ldapContextSource)
+  }
+
   private[auth] def authenticatedUserWithoutRoleT(credentials: UserCredentials): Task[AuthResult[UserWithoutRole]] = {
     // parameters
-    lazy val template: LdapTemplate = {
-      val ldapContextSource = new LdapContextSource
-
-      // apply ldap config
-      ldapContextSource.setUrl(config.sub.url)
-      ldapContextSource.setBase(config.baseDn)
-      ldapContextSource.setUserDn(config.sub.userDn)
-      ldapContextSource.setPassword(config.sub.password)
-
-      // this is necessary, when the ldapContextSource is not set by a spring context
-      // authenticationSource would be null otherwise
-      ldapContextSource.afterPropertiesSet()
-
-      new LdapTemplate(ldapContextSource)
-    }
 
     lazy val query: LdapQuery =
       LdapQueryBuilder.query()
@@ -60,25 +61,13 @@ object Ldap {
     // this tries to do the work
     def authenticatedUserWithoutRole: AuthResult[UserWithoutRole] = {
 
-      def isAuthenticated(buList: List[BU]) =
-        if (buList.nonEmpty) {
-          \/-(())
-        } else
-          -\/(BadCredentials(credentials, AuthProviderLdap))
-
-      def buInList(buList: List[BU]) =
-        buList.find(_ == bu) match {
-          case Some(b) => \/-(b)
-          case _ => -\/(BadCredentials(credentials, AuthProviderLdap))
-        }
-
       // this does the work
       def buList = template.authenticate(query, password, mapper)
 
-      for {
-        _ <- isAuthenticated(buList)
-        bu <- buInList(buList)
-      } yield UserWithoutRole(username, bu)
+      buList.find(_ == bu) match {
+        case Some(b) => \/-(UserWithoutRole(username, b))
+        case _ => -\/(BadCredentials(credentials, AuthProviderLdap))
+      }
     }
 
     // Task[\/[Throwable, AuthResult[UserWithoutRole]]]
@@ -91,5 +80,4 @@ object Ldap {
 
     Task.fork(task).timed(2.seconds).attempt.map(flatten)
   }
-
 }
